@@ -1,6 +1,6 @@
 # QC-on-SNPs
 This tutorial provides general steps to conduct preliminary quality control (**QC**) on SNP datasets (vcf files).  
-Note 1. This tutorial is based on best QC practices reviewed in several sources (in case you want to check them):
+Note 1. This tutorial is based on best QC practices reviewed in several sources (in case you want to check them):  
 [main source](https://doi.org/10.1002/sim.6605)  
 [source](https://currentprotocols.onlinelibrary.wiley.com/doi/10.1002/0471142905.hg0119s68)  
 [source](https://pubmed.ncbi.nlm.nih.gov/29484742/)  
