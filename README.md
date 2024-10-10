@@ -13,5 +13,4 @@ bcftools stats -s - filename
 ```
 Note that the second "–" is needed to specify that stats should be estimated for ALL samples in the vcf. Otherwise you can give a list of specific samples. 
 
-This command executes plink (./plink) takes a vcf file as input (--vcf ) and outputs a file in plink format (--out)
 
