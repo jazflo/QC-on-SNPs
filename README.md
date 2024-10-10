@@ -12,5 +12,11 @@ It´s a good idea to estimate general stats from your vcf file (hereon referred 
 bcftools stats -s - filename
 ```
 Note that the second "–" is needed to specify that stats should be estimated for ALL samples in the vcf. Otherwise you can give a list of specific samples. 
+## How to start QC?
+This is also known as "data pre-processing". Overall, SNPs have to go through two stages of filtering in this **specific** order:  
+1. Filtering at SNP level.
+2. Filtering at sample level.
+
+
 
 
