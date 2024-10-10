@@ -23,7 +23,7 @@ vcftools –vcf vcfile --max-missing 0.95 –-out prefix –recode –recode-INF
 ```
 
 * use *-vcf* or *-gzvcf* (if file is compressed), 0.95 is the minimum (proportion 0-1) of individuals genotyped at a particular SNP. Yes, it´s counterintuitive with the “*max missing*” bit, but it is what it is! Using 0 would mean that a SNP could have no individuals genotyped and still be kept after filtering. Using 1 would mean that, for a SNP to be kept, 100% of individuals must be genotyped for it.
-** *-recode* is needed, otherwise no vcf is produced. *–recode-INFO-all* keeps all info fields from the original vcf in the filtered vcf. 
+*  *-recode* is needed, otherwise no vcf is produced. *–recode-INFO-all* keeps all info fields from the original vcf in the filtered vcf. 
 
 
 
