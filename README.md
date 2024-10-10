@@ -3,7 +3,7 @@ This tutorial provides general steps to conduct preliminary quality control (**Q
 [main source](https://doi.org/10.1002/sim.6605)  
 [source](https://currentprotocols.onlinelibrary.wiley.com/doi/10.1002/0471142905.hg0119s68)  
 [source](https://pubmed.ncbi.nlm.nih.gov/29484742/)  
-[source](https://onlinelibrary.wiley.com/doi/10.1002/gepi.20516)
+[source](https://onlinelibrary.wiley.com/doi/10.1002/gepi.20516)  
 Note 1. This tutorial requires you to have [vcftools](https://vcftools.github.io/man_latest.html) and [bcftools](https://samtools.github.io/bcftools/) installed beforehand.  
 Note 2. Whenever possible, I provide alternative ways of performing the QC steps (i.e. alternative tools or softwares)  
 ## A useful command before starting QC
