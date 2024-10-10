@@ -17,11 +17,11 @@ Best practices for data pre-processing require that SNPs go through two stages o
 1. Filtering at **SNP** level.
 2. Filtering at **sample** level.
 ## Step 1. Filter by SNP call rate
-The *call rate* for a given SNP is defined as the *"proportion of individuals in the study, for which the corresponding SNP information is **not** missing"*. Another way to put it is: *"call rate = % of individuals with called genotype at a given SNP"*.  Ex. Filter out SNPs with <95% call rate [more here](https://www.biostars.org/p/487816/)  
+The *call rate* for a given SNP is defined as the *"proportion of individuals in the study, for which the corresponding SNP information is **not** missing"*. Another way to put it is: *"call rate = % of individuals with called genotype at a given SNP"*.  Ex. Filter out SNPs with <95% call rate [more here](https://www.biostars.org/p/487816/)  The following command uses vcftools to filter by call rate:
 ```
 vcftools –vcf vcfile --max-missing 0.95 –-out prefix –recode –recode-INFO-all 
 ```
-This command uses vcftools to filter by call rate.  
+
 * use *-vcf* or *-gzvcf* (if file is compressed), 0.95 is the minimum (proportion 0-1) of individuals genotyped at a particular SNP. Yes, it´s counterintuitive with the “*max missing*” bit, but it is what it is! Using 0 would mean that a SNP could have no individuals genotyped and still be kept after filtering. Using 1 would mean that, for a SNP to be kept, 100% of individuals must be genotyped for it.
 ** *-recode* is needed, otherwise no vcf is produced. *–recode-INFO-all* keeps all info fields from the original vcf in the filtered vcf. 
 
