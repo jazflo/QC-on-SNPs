@@ -6,10 +6,6 @@ This tutorial provides general steps to conduct preliminary quality control (**Q
 [source](https://onlinelibrary.wiley.com/doi/10.1002/gepi.20516)
 Note 1. This tutorial requires you to have [vcftools](https://vcftools.github.io/man_latest.html) and [bcftools](https://samtools.github.io/bcftools/) installed beforehand.  
 Note 2. Whenever possible, I provide alternative ways of performing the QC steps (i.e. alternative tools or softwares)  
-## If you intend to work with Plink software, you can transform a vcf file into plink format like this
-```
-./plink --vcf vcffile --out vcf_in_plink_format
-```
 ## A useful command before starting QC
 It´s a good idea to estimate general stats from your vcf file (hereon referred to as "filename"):
 ```
