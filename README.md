@@ -13,7 +13,7 @@ bcftools stats -s - filename
 ```
 Note that the second "–" is needed to specify that stats should be estimated for ALL samples in the vcf. Otherwise you can give a list of specific samples. 
 ## How to perform QC?
-Also known as "data pre-processing", best QC practices, require that SNPs go through two stages of filtering in a **specific** order:  
+Best practices for data pre-processing require that SNPs go through two stages of filtering in a **specific** order:  
 1. Filtering at **SNP** level.
 2. Filtering at **sample** level.
 
