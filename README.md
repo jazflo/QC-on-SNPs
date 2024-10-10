@@ -16,6 +16,8 @@ Note that the second "–" is needed to specify that stats should be estimated f
 Best practices for data pre-processing require that SNPs go through two stages of filtering in a **specific** order:  
 1. Filtering at **SNP** level.
 2. Filtering at **sample** level.
+## Step 1. Filter by SNP call rate
+The call rate for a given SNP is defined as the proportion of individuals in the study for which the corresponding SNP information is *not* missing Ex. Filter out SNPs with <95% call rate (https://www.biostars.org/p/487816/)
 
 
 
