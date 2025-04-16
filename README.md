@@ -12,6 +12,12 @@ It´s a good idea to estimate general stats from your vcf file (hereon referred 
 bcftools stats -s - filename
 ```
 Note that the second "–" is needed to specify that stats should be estimated for ALL samples in the vcf. Otherwise you can give a list of specific samples. 
+## Depending on your planned research, you might want to remove indels from a vcf file before further QC. 
+The following commands take a vcf file as input (it should work with compressed and uncompressed ones) and outputs new files of ONLY snps or ONLY indels. The **-Ov** option generates an uncompressed vcf as output, if you want it to be compressed, use **-Oz** instead.
+```
+bcftools view -v snps EGA_1500_vcf -o EGA_1500_SNPS -Ov
+bcftools view -v indels EGA_1500_vcf -o EGA_1500_INDELS -Ov
+```
 ## How to perform QC?
 Best practices for data pre-processing require that SNPs go through two stages of filtering in a **specific** order:  
 1. Filtering at **SNP** level.
